@@ -90,3 +90,298 @@ nested if
      \\block of code statement2
    }
   \\block of code statement1
+}
+PROGRAM 4:
+import java.util.*;
+public class datatypes{
+  public static void main(String[] args){
+    Scanner obj = new Scanner(System.in);
+    System.out.println( "Enter the number: ");
+    int value1=obj.nextInt();
+    if (value1>=20){
+      if (value1>20){
+        System.out.println("condition2");
+      }
+    System.out.println("condition1");
+    }
+  }
+}
+SYNTAX SWITCHCASE:
+Switch("condition1){
+case 1:
+//code
+....... }
+PROGRAM 5:SWITCH CASE
+import java.util.*;
+public class datatypes{
+  public static void main(String[] args){
+    Scanner obj = new Scanner(System.in);
+    System.out.println( "Enter the number: ");
+    int value1=obj.nextInt();
+   switch (value1) {
+     case 1:
+       System.out.println("Monday");
+       break;
+     case 2:
+       System.out.println("Tuesday");
+       break;
+     case 3:
+       System.out.println("Wednesday");
+       break;
+     case 4:
+       System.out.println("Thursday");
+       break;
+     case 5:
+       System.out.println("Friday");
+       break;
+     case 6:
+       System.out.println("Saturday");
+       break;
+     case 7:
+       System.out.println("Sunday");
+       break;
+     default:
+       System.out.println("Invalid day");
+   }
+  }
+   }
+PROGRAM 6:DEPT CASES
+import java.util.*;
+public class datatypes {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        System.out.println("Enter the branch code:");
+        int code = obj.nextInt();
+        switch(code) {
+            case 1:
+                System.out.println("CSE - Computer Science and Engineering");
+                break;
+            case 2:
+                System.out.println("ECE - Electronics and Communication Engineering");
+                break;
+            case 3:
+                System.out.println("CSD - Computer Science and Design");
+                break;
+            case 4:
+                System.out.println("AI - Artificial Intelligence");
+                break;
+            case 5:
+                System.out.println("AIML - Artificial Intelligence and Machine Learning");
+                break;
+            case 6:
+                System.out.println("IT - Information Technology");
+                break;
+            case 7:
+                System.out.println("EEE - Electrical and Electronics Engineering");
+                break;
+            case 8:
+                System.out.println("ME - Mechanical Engineering");
+                break;
+            case 9:
+                System.out.println("CE - Civil Engineering");
+                break;
+            case 10:
+                System.out.println("DS - Data Science");
+                break;
+            default:
+                System.out.println("Invalid Branch Code");
+        }
+        obj.close();
+    }
+}
+PROGRAM 7:
+import java.util.*;
+public class datatypes {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        System.out.println("Enter the month number (1-12): ");
+        int month = obj.nextInt();
+        switch(month) {
+            case 1:
+                System.out.println("January - 31 days");
+                break;
+            case 2:
+                System.out.println("February - 28 or 29 days");
+                break;
+            case 3:
+                System.out.println("March - 31 days");
+                break;
+            case 4:
+                System.out.println("April - 30 days");
+                break;
+            case 5:
+                System.out.println("May - 31 days");
+                break;
+            case 6:
+                System.out.println("June - 30 days");
+                break;
+            case 7:
+                System.out.println("July - 31 days");
+                break;
+            case 8:
+                System.out.println("August - 31 days");
+                break;
+            case 9:
+                System.out.println("September - 30 days");
+                break;
+            case 10:
+                System.out.println("October - 31 days");
+                break;
+            case 11:
+                System.out.println("November - 30 days");
+                break;
+            case 12:
+                System.out.println("December - 31 days");
+                break;
+            default:
+                System.out.println("Invalid month number");
+        }
+        obj.close();
+    }
+}
+PROGRAM 8:
+import java.util.*;
+
+public class datatypes {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int choice;
+        do {
+            System.out.println("\n===== CASIO CALCULATOR =====");
+            System.out.println("1. Addition (+)");
+            System.out.println("2. Subtraction (-)");
+            System.out.println("3. Multiplication (*)");
+            System.out.println("4. Division (/)");
+            System.out.println("5. Modulus (%)");
+            System.out.println("6. Power (x^y)");
+            System.out.println("7. Square (x^2)");
+            System.out.println("8. Square Root");
+            System.out.println("0. Exit");
+            System.out.println("Enter your choice:");
+            choice = obj.nextInt();
+            double a, b;
+            switch(choice) {
+                case 1:
+                    System.out.println("Enter two numbers:");
+                    a = obj.nextDouble();
+                    b = obj.nextDouble();
+                    System.out.println("Result = " + (a + b));
+                    break;
+                case 2:
+                    System.out.println("Enter two numbers:");
+                    a = obj.nextDouble();
+                    b = obj.nextDouble();
+                    System.out.println("Result = " + (a - b));
+                    break;
+                case 3:
+                    System.out.println("Enter two numbers:");
+                    a = obj.nextDouble();
+                    b = obj.nextDouble();
+                    System.out.println("Result = " + (a * b));
+                    break;
+                case 4:
+                    System.out.println("Enter two numbers:");
+                    a = obj.nextDouble();
+                    b = obj.nextDouble();
+                    if(b != 0) {
+                        System.out.println("Result = " + (a / b));
+                    }
+                    else {
+                        System.out.println("Cannot divide by zero");
+                    }
+                    break;
+                case 5:
+                    System.out.println("Enter two numbers:");
+                    a = obj.nextDouble();
+                    b = obj.nextDouble();
+
+                    if(b != 0) {
+                        System.out.println("Result = " + (a % b));
+                    }
+                    else {
+                        System.out.println("Cannot divide by zero");
+                    }
+                    break;
+                case 6:
+                    System.out.println("Enter base and exponent:");
+                    a = obj.nextDouble();
+                    b = obj.nextDouble();
+                    System.out.println("Result = " + Math.pow(a, b));
+                    break;
+                case 7:
+                    System.out.println("Enter a number:");
+                    a = obj.nextDouble();
+                    System.out.println("Square = " + (a * a));
+                    break;
+                case 8:
+                    System.out.println("Enter a number:");
+                    a = obj.nextDouble();
+                    if(a >= 0) {
+                        System.out.println("Square Root = " + Math.sqrt(a));
+                    }
+                    else {
+                        System.out.println("Invalid input");
+                    }
+                    break;
+                case 0:
+                    System.out.println("Thank you for using calculator!");
+                    break;
+                default:
+                    System.out.println("Invalid choice!");
+            }
+        } while(choice != 0);
+        obj.close();
+    }
+}
+PROGRAM 8:
+import java.util.Scanner;
+public class Calculator {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter first number:");
+        int a = sc.nextInt();
+        System.out.println("Enter second number:");
+        int b = sc.nextInt();
+        System.out.println("1. Addition");
+        System.out.println("2. Subtraction");
+        System.out.println("3. Multiplication");
+        System.out.println("4. Division");
+        System.out.println("Enter your choice:");
+        int choice = sc.nextInt();
+        switch (choice) {
+            case 1:
+                System.out.println("Addition = " + (a + b));
+                break;
+            case 2:
+                System.out.println("Subtraction = " + (a - b));
+                break;
+            case 3:
+                System.out.println("Multiplication = " + (a * b));
+                break;
+            case 4:
+                if (b != 0) {
+                    System.out.println("Division = " + (a / b));
+                } else {
+                    System.out.println("Cannot divide by zero");
+                }
+                break;
+            default:
+                System.out.println("Invalid Choice");
+        }
+        sc.close();
+    }
+}
+SYNTAX:
+for(int i = 0;i <= 10; i++){ //(int initialize ; condition ; incrrement or decrement)
+//block of code
+}
+PROGRAM 9:
+import java.util.*;
+public class main{
+  public static void main(String[] args){
+    int num=5;
+    for(int i=1;i<=10;i++){
+    System.out.println(num+"*"+i+"="+num*i);
+  }
+}
+}
