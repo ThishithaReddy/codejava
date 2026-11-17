@@ -1,0 +1,92 @@
+Control Statements:
+control stateemnts are divided into;They are
+  1.conditional
+  .if .ifelse .elseif ladder .nested if .switch
+  2.looping
+  .for .while .dowhile
+  3.Jumping
+  .continue .break .return
+
+  Syntax:
+  if condition{
+  //block of code
+}
+else
+  //block of code
+}
+PROGRAM 1:
+import java.util.*;
+public class datatypes {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int a = obj.nextInt();
+        if (a <= 10) {
+            System.out.println("Condition is true");
+        }
+        obj.close();
+    }
+}
+PROGRAM 2:
+import java.util.*;
+public class datatypes {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int num = 10;
+        String result = (num % 2 == 0) ? "Even" : "Odd";
+        System.out.println(result);
+    }
+}
+
+SYNTAX:
+if condition{
+  //block of code
+}
+else if condition2{
+  //block of code
+}
+else if condition3{
+  //block of code
+}
+else if condition4{
+  //block of code
+}
+else{
+  //block of code
+}
+PROGRAM 3:
+import java.util.*;
+public class StudentGrade {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        System.out.println("Enter student marks: ");
+        int marks = obj.nextInt();
+        if (marks >= 80 && marks <= 100) {
+            System.out.println("Distinct");
+        }
+        else if (marks >= 60 && marks <=80) {
+            System.out.println("Grade B");
+        }
+        else if (marks >= 50 && marks<=60) {
+            System.out.println("Grade C");
+        }
+        else if (marks >= 35 && marks<=50) {
+            System.out.println("Grade D");
+        }
+        else if (marks >= 0) {
+            System.out.println("Fail");
+        }
+        else {
+            System.out.println("Invalid Marks");
+        }
+        obj.close();
+    }
+}
+SYNTAX:
+nested if
+  if condition1{
+   if condition2{
+     \\block of code statement2
+   }
+  \\block of code statement1
